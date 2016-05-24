@@ -1,0 +1,231 @@
+{
+  "data": {
+    "a": {
+      "nodes": [
+        {
+          "id": "dGhpbmc6MQ==",
+          "rowId": 1,
+          "note": "hello"
+        },
+        {
+          "id": "dGhpbmc6Mg==",
+          "rowId": 2,
+          "note": "world"
+        },
+        {
+          "id": "dGhpbmc6Mw==",
+          "rowId": 3,
+          "note": "foo"
+        },
+        {
+          "id": "dGhpbmc6NA==",
+          "rowId": 4,
+          "note": "bar"
+        },
+        {
+          "id": "dGhpbmc6NQ==",
+          "rowId": 5,
+          "note": "baz"
+        },
+        {
+          "id": "dGhpbmc6Ng==",
+          "rowId": 6,
+          "note": "bux"
+        },
+        {
+          "id": "dGhpbmc6Nw==",
+          "rowId": 7,
+          "note": "qux"
+        }
+      ]
+    },
+    "b": {
+      "pageInfo": {
+        "hasNextPage": true,
+        "hasPreviousPage": false,
+        "startCursor": "MQ==",
+        "endCursor": "Mg=="
+      },
+      "edges": [
+        {
+          "cursor": "MQ==",
+          "node": {
+            "id": "dGhpbmc6MQ==",
+            "rowId": 1,
+            "note": "hello"
+          }
+        },
+        {
+          "cursor": "Mg==",
+          "node": {
+            "id": "dGhpbmc6Mg==",
+            "rowId": 2,
+            "note": "world"
+          }
+        }
+      ]
+    },
+    "c": {
+      "pageInfo": {
+        "hasNextPage": false,
+        "hasPreviousPage": true,
+        "startCursor": "Ng==",
+        "endCursor": "Nw=="
+      },
+      "nodes": [
+        {
+          "id": "dGhpbmc6Ng==",
+          "rowId": 6,
+          "note": "bux"
+        },
+        {
+          "id": "dGhpbmc6Nw==",
+          "rowId": 7,
+          "note": "qux"
+        }
+      ]
+    },
+    "d": {
+      "nodes": [
+        {
+          "id": "dGhpbmc6NA==",
+          "rowId": 4,
+          "note": "bar"
+        },
+        {
+          "id": "dGhpbmc6NQ==",
+          "rowId": 5,
+          "note": "baz"
+        },
+        {
+          "id": "dGhpbmc6Ng==",
+          "rowId": 6,
+          "note": "bux"
+        },
+        {
+          "id": "dGhpbmc6Mw==",
+          "rowId": 3,
+          "note": "foo"
+        },
+        {
+          "id": "dGhpbmc6MQ==",
+          "rowId": 1,
+          "note": "hello"
+        },
+        {
+          "id": "dGhpbmc6Nw==",
+          "rowId": 7,
+          "note": "qux"
+        },
+        {
+          "id": "dGhpbmc6Mg==",
+          "rowId": 2,
+          "note": "world"
+        }
+      ]
+    },
+    "e": {
+      "edges": [
+        {
+          "cursor": "d29ybGQ=",
+          "node": {
+            "id": "dGhpbmc6Mg==",
+            "rowId": 2,
+            "note": "world"
+          }
+        },
+        {
+          "cursor": "cXV4",
+          "node": {
+            "id": "dGhpbmc6Nw==",
+            "rowId": 7,
+            "note": "qux"
+          }
+        },
+        {
+          "cursor": "aGVsbG8=",
+          "node": {
+            "id": "dGhpbmc6MQ==",
+            "rowId": 1,
+            "note": "hello"
+          }
+        },
+        {
+          "cursor": "Zm9v",
+          "node": {
+            "id": "dGhpbmc6Mw==",
+            "rowId": 3,
+            "note": "foo"
+          }
+        },
+        {
+          "cursor": "YnV4",
+          "node": {
+            "id": "dGhpbmc6Ng==",
+            "rowId": 6,
+            "note": "bux"
+          }
+        },
+        {
+          "cursor": "YmF6",
+          "node": {
+            "id": "dGhpbmc6NQ==",
+            "rowId": 5,
+            "note": "baz"
+          }
+        },
+        {
+          "cursor": "YmFy",
+          "node": {
+            "id": "dGhpbmc6NA==",
+            "rowId": 4,
+            "note": "bar"
+          }
+        }
+      ]
+    },
+    "f": {
+      "nodes": [
+        {
+          "id": "dGhpbmc6MQ==",
+          "rowId": 1,
+          "note": "hello"
+        },
+        {
+          "id": "dGhpbmc6Mg==",
+          "rowId": 2,
+          "note": "world"
+        },
+        {
+          "id": "dGhpbmc6Mw==",
+          "rowId": 3,
+          "note": "foo"
+        },
+        {
+          "id": "dGhpbmc6NA==",
+          "rowId": 4,
+          "note": "bar"
+        }
+      ]
+    },
+    "g": {
+      "nodes": [
+        {
+          "id": "dGhpbmc6NQ==",
+          "rowId": 5,
+          "note": "baz"
+        },
+        {
+          "id": "dGhpbmc6Ng==",
+          "rowId": 6,
+          "note": "bux"
+        },
+        {
+          "id": "dGhpbmc6Nw==",
+          "rowId": 7,
+          "note": "qux"
+        }
+      ]
+    }
+  }
+}

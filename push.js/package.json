@@ -1,0 +1,39 @@
+{
+  "name": "push.js",
+  "version": "0.0.5",
+  "description": "A compact, cross-browser solution for the Javascript Notifications API",
+  "main": "push.js",
+  "scripts": {
+    "build": "node_modules/.bin/uglifyjs  push.js node_modules/promise-polyfill/promise.js -o push.min.js --comments",
+    "test": "node_modules/.bin/karma start",
+    "prepublish": "npm run build"
+  },
+  "files": [
+    "test",
+    "*.js",
+    "*.html",
+    "*.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nickersoft/push.js"
+  },
+  "author": "Tyler Nickerson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nickersoft/push.js/issues"
+  },
+  "homepage": "https://github.com/Nickersoft/push.js",
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-coverage": "^1.0.0",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.8",
+    "karma-mocha-reporter": "^1.3.0",
+    "uglify-js": "^2.6.2"
+  },
+  "dependencies": {
+    "promise-polyfill": "^5.2.1"
+  }
+}

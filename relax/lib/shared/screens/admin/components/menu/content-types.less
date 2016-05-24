@@ -1,0 +1,35 @@
+@import '~styles/colors.less';
+
+.contentTypes {
+  margin-top: 10px;
+}
+
+.header {
+  padding: 0 15px;
+}
+
+.text {
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 40px;
+  font-weight: 600;
+  color: @adminText;
+}
+
+.button {
+  float: right;
+  display: inline-block;
+  vertical-align: top;
+
+  :global i {
+    color: @adminText;
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  &:hover :global i {
+    color: @primarySub;
+  }
+}

@@ -1,0 +1,60 @@
+@import '~styles/sizes.less';
+@import '~styles/colors.less';
+
+.root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: @menuWidth;
+  border-right: 1px solid @adminBorders;
+  overflow: hidden;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: -1px;
+  bottom: 80px;
+  transform: translateX(0%);
+  border-right: 1px solid @adminBorders;
+  z-index: 1;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: -1px;
+  bottom: 80px;
+  transform: translateX(100%);
+}
+
+.opened {
+  .menu {
+    transform: translateX(-100%);
+  }
+  .content {
+    transform: translateX(0%);
+  }
+}
+
+.menuContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.sepperator {
+  display: block;
+  height: 0px;
+  width: 100%;
+  border-bottom: 1px solid @adminBorders;
+  margin: 0;
+  padding: 0;
+}

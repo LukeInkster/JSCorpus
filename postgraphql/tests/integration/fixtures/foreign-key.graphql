@@ -1,0 +1,18 @@
+query ForeignKey {
+  relationNodes {
+    nodes {
+      aThingId
+      bThingId
+      thingByAThingId {
+        id
+        rowId
+        note
+      }
+      thingByBThingId {
+        id
+        rowId
+        note
+      }
+    }
+  }
+}

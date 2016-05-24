@@ -1,0 +1,42 @@
+@import '~styles/sizes.less';
+
+:global {
+  body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    font-family: 'Open Sans';
+  }
+}
+
+.root {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.content {
+  position: absolute;
+  top: @topMenuHeight;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.pageContent {
+  position: absolute;
+  top: 0;
+  left: @menuWidth;
+  right: 0;
+  bottom: 0;
+}
+
+.pagePreviewing {
+  right: -290px;
+}
+
+.build {
+  transform: translateX(-290px);
+}

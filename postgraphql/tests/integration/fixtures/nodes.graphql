@@ -1,0 +1,38 @@
+query Nodes {
+  a: thingNodes {
+    nodes { ...thing }
+  }
+  b: thingNodes(first: 2) {
+    pageInfo { ...pageInfo }
+    edges { cursor, node { ...thing } }
+  }
+  c: thingNodes(last: 2) {
+		pageInfo { ...pageInfo }
+    nodes { ...thing }
+  }
+  d: thingNodes(orderBy: NOTE) {
+    nodes { ...thing }
+  }
+  e: thingNodes(orderBy: NOTE, descending: true) {
+    edges { cursor, node { ...thing } }
+  }
+  f: thingNodes(before: "NQ==") {
+    nodes { ...thing }
+  }
+  g: thingNodes(after: "NA==") {
+    nodes { ...thing }
+  }
+}
+
+fragment thing on Thing {
+  id
+  rowId
+  note
+}
+
+fragment pageInfo on PageInfo {
+  hasNextPage
+  hasPreviousPage
+  startCursor
+  endCursor
+}

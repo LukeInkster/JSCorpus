@@ -1,0 +1,21 @@
+query ForeignKeyReverse {
+  thingNodes {
+    nodes {
+      id
+      rowId
+      note
+      relationNodesByAThingId {
+        nodes {
+          aThingId
+          bThingId
+        }
+      }
+      relationNodesByBThingId {
+        nodes {
+          aThingId
+          bThingId
+        }
+      }
+    }
+  }
+}

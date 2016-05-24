@@ -1,0 +1,34 @@
+query Pagination {
+  a: thingNodes { ...page }
+  b: thingNodes(first: 2) { ...page }
+  c: thingNodes(first: 7) { ...page }
+  d: thingNodes(first: 100) { ...page }
+  e: thingNodes(offset: 3) { ...page }
+  f: thingNodes(offset: 50) { ...page }
+  g: thingNodes(first: 1, offset: 1) { ...page }
+  h: thingNodes(first: 4, offset: 5) { ...page }
+  i: thingNodes(first: 4, offset: 5) { ...page }
+  j: thingNodes(after: "NQ==") { ...page }
+  k: thingNodes(after: "Nw==") { ...page }
+  l: thingNodes(before: "Mw==") { ...page }
+  m: thingNodes(before: "MQ==") { ...page }
+  n: thingNodes(after: "NQ==", before: "NQ==") { ...page }
+  o: thingNodes(after: "Mg==", before: "Ng==") { ...page }
+  p: thingNodes(after: "NA==", first: 2) { ...page }
+  q: thingNodes(after: "NA==", first: 40) { ...page }
+  r: thingNodes(before: "NA==", last: 2) { ...page }
+  s: thingNodes(before: "NA==", first: 2) { ...page }
+  t: thingNodes(before: "NA==", last: 40) { ...page }
+}
+
+fragment page on ThingConnection {
+  pageInfo {
+    hasNextPage
+    hasPreviousPage
+  }
+  nodes {
+    id
+    rowId
+    note
+  }
+}

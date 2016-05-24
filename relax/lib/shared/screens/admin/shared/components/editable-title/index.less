@@ -1,0 +1,97 @@
+@import '~styles/colors.less';
+
+.title {
+  display: inline-block;
+  vertical-align: top;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  height: 26px;
+  color: @adminTextHighlight;
+}
+
+.editButton {
+  :global i {
+    color: @adminText;
+    font-size: 16px;
+    line-height: 26px;
+    margin-left: 10px;
+    opacity: 0;
+    transition: all 0.1s ease-out;
+  }
+
+  &:hover :global i {
+    opacity: 1;
+  }
+}
+
+.input {
+  display: inline-block;
+  vertical-align: top;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  width: 350px;
+  height: 26px;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.formButton {
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  line-height: 26px;
+  height: 26px;
+}
+
+.confirmButton {
+  color: @primary;
+}
+
+.cancelButton {
+  color: @adminText;
+
+  &:hover {
+    color: @alert;
+  }
+}
+
+.big {
+  .title {
+    line-height: 49px;
+    height: 49px;
+  }
+  .editButton {
+    :global i {
+      line-height: 49px;
+    }
+  }
+  .formButton {
+    height: 49px;
+  }
+}
+
+.sub {
+  .title {
+    font-size: 12px;
+    line-height: 25px;
+    height: 25px;
+    color: @adminText;
+  }
+  .editButton {
+    :global i {
+      font-size: 13px;
+      line-height: 25px;
+    }
+  }
+  .formButton {
+    line-height: 25px;
+    height: 25px;
+  }
+}
